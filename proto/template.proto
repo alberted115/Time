@@ -1,0 +1,20 @@
+ syntax = "proto3";
+ option go_package = "github.com/alberted115/Time/proto";
+ package proto;
+
+
+ service Time
+{
+    rpc GetTime (TimeRequest) returns (TimeResponse);
+}
+
+
+message TimeRequest {
+    string time = 1;
+}
+
+
+message TimeResponse {
+    string time = 1;
+ }
+ 
